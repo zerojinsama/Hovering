@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game</title>     	 
+<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width,target-densitydpi=device-dpi"> 
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+
+</head>
+<body >
+	<div id="gamepage">
+		<canvas id="canvas1" width="360" height="460"></canvas>
+	</div>
+	<div id="gameend" style="display:none;width:200px;height:150px;margin-top: 170px;margin-left: 80px;background: #87f031;">
+		<div style="width:200px;height:50px;">
+			<span style="width: 200px;height: 50px;background: #f559c6;font-size: 27px;text-align: center;line-height: 44px;" >game over!</span>
+		</div>
+		<div style="width:200px;height:50px;margin-top: 50px; *">
+			<span id="score" style="width: 200px;height: 50px;font-size: 27px;text-align: center;line-height: 44px;" ></span>
+			
+		</div>
+	</div>
+	<div id="gamestart" style="background-color: rgba(0,0,0,.8);text-align: center;font-weight: bold;overflow: hidden;position: fixed;">
+
+        <button style="margin: 300px auto; width: 100px; height: 60px; font-size: 20px; font-weight: bolder;" onclick="startgame()">Start Game</button>
+		
+	</div>
+	<div id="gameendbtn" class="mybtn" style="display:none;margin-top: 269px;margin-left: 108px;" onclick="restart()">Play Again</div>
+</body>
+</div>
+</html>
